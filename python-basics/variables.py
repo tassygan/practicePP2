@@ -33,3 +33,34 @@ x, y, z = fruits
 print(x)
 print(y)
 print(z)
+
+#output variables 
+x = "Python"
+y = "is"
+z = "awesome"
+print(x)
+print(x, y, z)
+print(x + y + z)
+
+#global variables
+#ex 1
+x = "awesome" #this is global variable 
+
+def myfunc():
+  x = "fantastic"
+  print("Python is " + x)
+
+myfunc()
+
+print("Python is " + x)
+
+#ex 2
+x = "awesome"
+
+def myfunc():
+  global x #To change the value of a global variable inside a function
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
