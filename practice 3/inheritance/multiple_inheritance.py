@@ -1,13 +1,14 @@
 class Flyer:
-    def move(self):
+    def fly(self):
         print("Flying")
 
 class Swimmer:
-    def move(self):
+    def swim(self):
         print("Swimming")
 
 class Duck(Flyer, Swimmer):
     pass
 
 d = Duck()
-d.move()  
+d.fly()
+d.swim()
