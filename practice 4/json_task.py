@@ -6,7 +6,7 @@ import json
 with open(file, "r", encoding="utf-8") as f:
     data = json.load(f)
 
-print("DN", "Description", "Speed", "MTU")  # заголовки
+print("DN", "Description", "Speed", "MTU") 
 
 for item in data["imdata"]:
     attrs = item["l1PhysIf"]["attributes"]
