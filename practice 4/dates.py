@@ -16,9 +16,8 @@ print("Tomorrow:", tomorrow)
 
 #3 
 dt = datetime.now()
-dt_no_micro = dt.replace(microsecond=0)
-print("With microseconds:", dt)
-print("Without microseconds:", dt_no_micro)
+no_micro = dt.replace(microsecond=0)
+print("Without microseconds:", no_micro)
 
 #4
 d1 = datetime(2026, 2, 20, 10, 0, 0)
