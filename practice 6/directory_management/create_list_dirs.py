@@ -4,7 +4,7 @@ path = "practice_folder/subfolder1/subfolder2"
 os.makedirs(path, exist_ok=True)
 path = "practice_folder"
 
-print("Содержимое папки:")
+print("folder contains:")
 for item in os.listdir(path):
     print(item)
     
