@@ -13,7 +13,8 @@ def evens(n):
         if i % 2 == 0:
             yield i
 n = int(input("n: "))
-print(",".join(str(x) for x in evens(n)))
+for x in evens(n):
+    print (x)
 
 
 #3
@@ -46,3 +47,4 @@ def down(n):
 n = int(input("n: "))
 for x in down(n):
     print(x)
+
